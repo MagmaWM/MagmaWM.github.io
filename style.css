@@ -473,8 +473,8 @@ html::-webkit-scrollbar-thumb {
     
     .navbar #nav-logo {
         display: block;
-        margin-right: -60px;
-        margin-left: 65px;
+        margin-right: -20px;
+        margin-left: 20px;
     }
     
     .mb-links,.mb-nav-logo {
