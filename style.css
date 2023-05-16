@@ -156,10 +156,6 @@ html::-webkit-scrollbar-thumb {
     color: #fc670f
 }
 
-.navbar .burger-icon,.mb-nav-logo {
-    display: none
-}
-
 .mb-links {
     display: none;
     transition: height .3s ease-in-out;
@@ -223,8 +219,8 @@ html::-webkit-scrollbar-thumb {
 
 .primary .right-section .primary-img .preview-image {
     box-shadow: 0 25px 50px -12px #00000040;
-    background-image: url(./assets/magma.png);
-    background-size: contain;
+    background-image: url(./assets/scrmain.png);
+    background-size: 100%;
     background-position: center;
     width: 610px;
     height: 314px;
@@ -315,27 +311,6 @@ html::-webkit-scrollbar-thumb {
     color: #f3faff80
 }
 
-.secondary-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 3px;
-    padding: 12px 22px;
-    background-color: #E6930D
-}
-
-.secondary-btn:hover {
-    background-color: #C07C0F;
-    transition: all .1s ease-in-out
-}
-
-.secondary-btn:active {
-    background-color: #C07C0F;
-    transition: all .1s ease-in-out
-}
-
 .primary-btn-gh {
     display: inline-flex;
     align-items: center;
@@ -354,6 +329,27 @@ html::-webkit-scrollbar-thumb {
 
 .primary-btn-gh:active {
     background-color: #1d212cc5;
+    transition: all .1s ease-in-out
+}
+
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 12px 22px;
+    background-color: #e6930d
+}
+
+.secondary-btn:hover {
+    background-color: #c07c0f;
+    transition: all .1s ease-in-out
+}
+
+.secondary-btn:active {
+    background-color: #c07c0f;
     transition: all .1s ease-in-out
 }
 
@@ -452,7 +448,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     .primary-btn,.secondary-btn {
-        font-size: 14px
+        font-size: 16px
     }
 
     h2 {
@@ -469,6 +465,18 @@ html::-webkit-scrollbar-thumb {
         display:none
     }
 
+    .navbar #egg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .navbar #nav-logo {
+        display: block;
+        margin-right: -60px;
+        margin-left: 65px;
+    }
+    
     .mb-links,.mb-nav-logo {
         display: block
     }
@@ -508,11 +516,8 @@ html::-webkit-scrollbar-thumb {
         display: none
     }
 
-    .buttons .primary-btn,.buttons .secondary-btn,.buttons .primary-btn-dc,.buttons .primary-btn-gh { 
+    .buttons .primary-btn,.buttons .secondary-btn,.buttons .primary-btn-dc,.buttons .primary-btn-gh {
         width: 100%;
         justify-content: center
     }
 }
-
-
-
