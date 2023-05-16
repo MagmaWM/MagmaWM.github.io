@@ -444,7 +444,7 @@ html::-webkit-scrollbar-thumb {
 
 @media(max-width: 850px) {
     .primary .left-section h1 {
-        font-size: 48px
+        font-size: 40px
     }
 
     .primary-btn,.secondary-btn {
@@ -452,11 +452,11 @@ html::-webkit-scrollbar-thumb {
     }
 
     h2 {
-        font-size: 48px
+        font-size: 40px
     }
 
     p {
-        font-size: 22px
+        font-size: 17px
     }
 }
 
