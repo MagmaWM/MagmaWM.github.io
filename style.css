@@ -323,16 +323,16 @@ html::-webkit-scrollbar-thumb {
     font-size: 16px;
     border-radius: 3px;
     padding: 12px 22px;
-    background-color: #0d1117
+    background-color: #fc670f
 }
 
 .secondary-btn:hover {
-    background-color: #0c0000cc0;
+    background-color: #fc580cc4;
     transition: all .1s ease-in-out
 }
 
 .secondary-btn:active {
-    background-color: #0c000cc0;
+    background-color: #fc580cc4;
     transition: all .1s ease-in-out
 }
 
