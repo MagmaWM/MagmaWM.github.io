@@ -323,16 +323,37 @@ html::-webkit-scrollbar-thumb {
     font-size: 16px;
     border-radius: 3px;
     padding: 12px 22px;
-    background-color: #fc670f
+    background-color: #E6930D
 }
 
 .secondary-btn:hover {
-    background-color: #fc580cc4;
+    background-color: #C07C0F;
     transition: all .1s ease-in-out
 }
 
 .secondary-btn:active {
-    background-color: #fc580cc4;
+    background-color: #C07C0F;
+    transition: all .1s ease-in-out
+}
+
+.primary-btn-gh {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 12px 22px;
+    background-color: #2b3137
+}
+
+.primary-btn-gh:hover {
+    background-color: #1d212cc5;
+    transition: all .1s ease-in-out
+}
+
+.primary-btn-gh:active {
+    background-color: #1d212cc5;
     transition: all .1s ease-in-out
 }
 
