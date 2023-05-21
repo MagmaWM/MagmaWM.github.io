@@ -156,32 +156,6 @@ html::-webkit-scrollbar-thumb {
     color: #fc670f
 }
 
-.mb-links {
-    display: none;
-    transition: height .3s ease-in-out;
-    height: 0;
-    overflow: hidden
-}
-
-.mb-links a {
-    display: block;
-    padding: 25px 10px
-}
-
-.mb-links hr {
-    border: 1px solid hsla(223,35%,14%,.5);
-    margin: 5px 0
-}
-
-.mb-links .active {
-    color: #1a91ff;
-    font-weight: 700
-}
-
-.mb-links.toggled {
-    height: 330px
-}
-
 .primary {
     margin-top: 90px;
     display: flex;
@@ -219,7 +193,7 @@ html::-webkit-scrollbar-thumb {
 
 .primary .right-section .primary-img .preview-image {
     box-shadow: 0 25px 50px -12px #00000040;
-    background-image: url(./assets/scrmain.png);
+    background-image: url(./assets/scrmain.webp);
     background-size: 100%;
     background-position: center;
     width: 610px;
@@ -385,14 +359,14 @@ html::-webkit-scrollbar-thumb {
 .pkgstat #arch,#debian,#fedora,#opensuse {
     font-size:14.5px;
     border-style: solid;
-    border-image: url(./assets/hex.png) 150 / 4px 12px 4px;
+    border-image: url(./assets/hex.webp) 150 / 4px 12px 4px;
     border-radius:6px;
 }
 
 .pkgstat #pacman,#apt,#dnf,#zypper {
     font-size:14.5px;
     border-style: solid;
-    border-image: url(./assets/hex2.png) 150 / 4px 12px 4px;
+    border-image: url(./assets/hex2.webp) 150 / 4px 12px 4px;
     border-radius:6px;
 }
 
@@ -400,11 +374,11 @@ html::-webkit-scrollbar-thumb {
   .pkgstat #pacman,#apt,#dnf,#zypper {
       margin-left: 4px;
       margin-right: 4px;
-      border-image: url(./assets/hex.png) 150 / 4px 12px 4px;
+      border-image: url(./assets/hex.webp) 150 / 4px 12px 4px;
       border-style:solid;
  }
   .pkgstat .row .col-sm #arch,#debian,#fedora,#opensuse {
-      border-image: url(./assets/hex.png) 150 / 4px 12px 4px;
+      border-image: url(./assets/hex.webp) 150 / 4px 12px 4px;
       border-style:solid;
   }
 }
@@ -492,7 +466,7 @@ html::-webkit-scrollbar-thumb {
 
 @media(max-width: 550px) {
     .primary {
-        margin-top: 100px
+        margin-top: 10px
     }
 
     .primary .left-section h1,.primary .left-section p {
