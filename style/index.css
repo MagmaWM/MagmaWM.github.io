@@ -135,3 +135,49 @@
 	color: var(--logo-light);
 
 }
+
+/* CONTENT */
+
+.content {
+  width: 60%;
+	flex: auto;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	animation-name: fadein-main;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+	animation-timing-function: cubic-bezier(.22,.61,.36,1);
+	animation-fill-mode: forwards;
+	opacity: 0;
+
+}
+@keyframes fadein-main {
+		0% {
+				opacity: 0.0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+
+
+.content > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+}
+
+.content h1 {
+	color: var(--text-color);
+	font-family: 'JosefinSans', 'sans-serif';
+	font-size: 2rem;
+}
+.text {
+	color: var(--text-color);
+	font-family: 'DM sans', 'sans-serif';
+	font-size: 1.7rem;
+	margin-left: 20px;
+}
