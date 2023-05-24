@@ -2,7 +2,6 @@
   font-family: Argon;
   src: url(/assets/Argon.otf);
 }
-
 :root {
   /* Variables */
     --background-color: #181818;
@@ -12,8 +11,8 @@
     /* logo accent */
     --logo-light: #e6930d;
     --logo-dark: #fc670f;
-
-  
+	  --code-color: #969896;
+    --mono-color: #1d1f21;
   /* root */
   background-color: var(--background-color);
   color: var(--text-color);
@@ -21,7 +20,6 @@
 }
 body {
 	background: var(--background-color);
-	overflow: hidden;
 }
 /* Menu bar */
 .header-container {
@@ -113,12 +111,6 @@ body {
   font-size: 2.0rem; /* adjust as needed */
   font-weight: bold;
   margin-top: 5px;
-  transition: all 0.2s ease-in-out;
-
-}
-
-.logo-container .logo-text:hover {
-	transform: scale(1.05);
 }
 
 .header a {
@@ -185,6 +177,8 @@ body {
 	padding: 10px;
 	margin: 10px;
 	border-radius: 10px;
+	text-decoration: none;
+	color: var(--text-color);
 }
 #docs, #discord {
   display: inline-block;
@@ -276,4 +270,61 @@ hr {
 }
 .carousel-control-next {
 	margin: -90px;
+}
+
+/* Packaging */
+.packaging {
+	margin-top: 100px;
+}
+
+.packaging h1,
+.packaging h3 {
+	color: var(--text-color);
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+}
+.docsbottom {
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.docsbottom {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.docsbottom:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-light);
+	color: var(--logo-light);
+	background-color: var(--background-color);
+}
+.docsbottom {
+  flex-grow: 1;
+  text-align: center;
+}
+.docsbottom {
+  width: 160px;
+}
+
+.docsbottom {
+	background-color: var(--logo-dark);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.docsbottom {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	padding-left: 20px;
+	padding-right: 20px;	
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	color: var(--text-color);
 }
