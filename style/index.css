@@ -19,7 +19,10 @@
   color: var(--text-color);
   font-family: 'DM Sans',sans-serif;
 }
-
+body {
+	background: var(--background-color);
+	overflow: hidden;
+}
 /* Menu bar */
 .header-container {
   background-color: var(--menu-color);
@@ -79,7 +82,7 @@
 
 #github:hover {
   background: transparent;
-	transform: scale(1.3);
+	transform: scale(1.1);
 	border-color: var(--logo-light);
 	color: var(--logo-light);
 	background-color: var(--background-color);
@@ -138,22 +141,13 @@
 
 /* CONTENT */
 
-.content {
-  width: 60%;
-	flex: auto;
-	margin-bottom: 50px;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	animation-name: fadein-main;
-	animation-iteration-count: 1;
-	animation-duration: 5s;
-	animation-timing-function: cubic-bezier(.22,.61,.36,1);
-	animation-fill-mode: forwards;
-	opacity: 0;
 
+.content {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
 }
-@keyframes fadein-main {
+@keyframes fadein {
 		0% {
 				opacity: 0.0;
 		}
@@ -162,22 +156,124 @@
 		}
 }
 
-
-.content > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 100%;
-}
-
-.content h1 {
-	color: var(--text-color);
-	font-family: 'JosefinSans', 'sans-serif';
-	font-size: 2rem;
-}
 .text {
-	color: var(--text-color);
-	font-family: 'DM sans', 'sans-serif';
-	font-size: 1.7rem;
-	margin-left: 20px;
+  color: var(--text-color);
+  flex: 1;
+	flex-direction: column;
+	animation-name: fadein;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: cubic-bezier(.22,.61,.36,1);
+	animation-fill-mode: forwards;
+	opacity: 0;	
+}
+
+.image-container {
+  margin-left: 40px;
+  flex-shrink: 0;
+  width: 55%;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.image-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.content a {
+	padding-top: 20px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+#docs, #discord {
+  display: inline-block;
+  width: 200px; /* Adjust the width as per your requirements */
+}
+
+#docs {
+	background-color: var(--logo-dark);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+#discord {
+	background: var(--logo-light);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+a#docs,
+a#discord {
+  flex-grow: 1;
+  text-align: center;
+}
+
+hr {
+	color: red;
+}
+#docs {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#docs:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-light);
+	color: var(--logo-light);
+	background-color: var(--background-color);
+}
+#discord {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	border: 1px solid transparent;
+}
+
+#discord:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-dark);
+	color: var(--logo-dark);
+	background-color: var(--background-color);
+}
+
+.content img {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	border: 1px solid transparent;
+
+}
+
+.content img:hover {
+  background: transparent;
+	transform: scale(1.03);
+	border: 1px solid black;
+	color: var(--logo-dark);
+	background-color: var(--background-color);
+}
+
+/* Carousel */
+.carousel {
+  margin-top: 60px;
+  width: 80%; 
+  display: block;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+	margin-left: auto;
+  margin-right: auto;
+}
+.carousel img {
+	border-radius: 5px;
+}
+.carousel-inner {
+	width: 100%;
+}
+.carousel-control-prev {
+	margin: -90px;
+}
+.carousel-control-next {
+	margin: -90px;
 }
