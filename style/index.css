@@ -29,6 +29,12 @@ body {
   position: relative; /* Add relative positioning */
 
 }
+.header-container {
+  background-color: var(--menu-color);
+  padding-bottom: 10px;
+  position: relative; /* Add relative positioning */
+
+}
 
 .header-container::after {
   content: "";
@@ -185,30 +191,50 @@ body {
 	text-decoration: none;
 	color: var(--text-color);
 }
-#docs, #discord {
+#docs, #discord, #github-1 {
   display: inline-block;
-  width: 200px; /* Adjust the width as per your requirements */
+  width: 100px;
 }
 
 #docs {
 	background-color: var(--logo-light);
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 #discord {
 	background: #7289da;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 
 a#docs,
-a#discord {
+a#discord,
+a#github-1 {
   flex-grow: 1;
   text-align: center;
 }
 
+#github-1 {
+  display: none;
+	color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: white;
+	padding-left: 10px;
+	padding-right: 10px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+#github-1:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: white;
+	color: white;
+	background-color: var(--background-color);
+}
 hr {
 	color: red;
 }
@@ -240,21 +266,30 @@ hr {
 	background-color: var(--background-color);
 }
 
-.content img {
+#image1 {
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 	border: 1px solid transparent;
 
 }
 
-.content img:hover {
+#image1:hover {
   background: transparent;
 	transform: scale(1.03);
 	border: 1px solid black;
 	color: var(--logo-dark);
 	background-color: var(--background-color);
 }
-
+#magma-mobile {
+  display: none;
+  margin-top: 10px;
+	padding-bottom: 10px;
+	width: 20%;
+	position: absolute;
+  top: 8px;
+  left: 41%;
+  font-size: 18px;
+}
 /* Carousel */
 .carousel {
   margin-top: 60px;
@@ -287,4 +322,25 @@ hr {
 	color: var(--text-color);
 	font-family: 'Teko', sans-serif;
 	text-align: center;
+}
+
+
+/* mobile */
+@media (max-width: 720px) {
+    .header {
+        display:none;
+    }
+    .image-container {
+        display:none;
+    }
+    .content {
+		    margin-top: 40px;
+        text-align: center;
+    }
+    #github-1 {
+        display: inline-block;
+    }
+		#magma-mobile {
+			padding: 10px;
+		}
 }
