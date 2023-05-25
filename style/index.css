@@ -280,16 +280,6 @@ hr {
 	color: var(--logo-dark);
 	background-color: var(--background-color);
 }
-#magma-mobile {
-  display: none;
-  margin-top: 10px;
-	padding-bottom: 10px;
-	width: 20%;
-	position: absolute;
-  top: 8px;
-  left: 41%;
-  font-size: 18px;
-}
 /* Carousel */
 .carousel {
   margin-top: 60px;
