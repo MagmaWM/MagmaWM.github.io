@@ -108,6 +108,7 @@ body {
 }
 
 .logo-container .logo-text {
+  cursor: pointer;
   background: linear-gradient(90deg, var(--logo-dark), var(--logo-light));
   background-clip: text;
   -webkit-background-clip: text;
