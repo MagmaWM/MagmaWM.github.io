@@ -295,10 +295,10 @@ hr {
 	width: 100%;
 }
 .carousel-control-prev {
-	margin: -130px;
+	margin-left: -130px;
 }
 .carousel-control-next {
-	margin: -130px;
+	margin-right: -130px;
 }
 
 /* Packaging */
