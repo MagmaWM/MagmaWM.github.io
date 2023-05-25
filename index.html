@@ -1,162 +1,104 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="utf-8">
-<link rel="icon" href="./assets/magma.webp">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="MagmaWM">
-<meta name="keywords" content="linux, wayland, compositor">
-<meta name="publisher" content="MagmaWM">
-<meta name="robots" content="Home, https://magmawm.org">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://magmawm.org">
-<meta property="og:image" content="https://magmawm.org/magma.webp">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-<meta http-equiv="content-security-policy" content=""><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="./style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
-
-
-
-
-
-
-
-<title>MagmaWM</title><meta name="title" content="MagmaWM - Blazingly Fast Wayland Compositor"><meta name="description" content="MagmaWM is an optimized wayland compositor that has eyecandy features"><meta property="og:title" content="MagmaWM"><meta property="og:description" content="MagmaWM is a blazingly fast wayland compositor written in Rust">
-</head>
-<body>
-<div>
-<div class="sticky-nav"><div class="lg-container"><div class="navbar"><button id="nav-logo" onclick="location.href='https://magmawm.org/egg.html'"><img id="mlogo" src="./assets/magma.webp" alt="" style="
-    width: 64px;
-    height: 64px;
-">
-</button><button id="egg" onclick="location.href='https://magmawm.org'"><img src="./assets/mewm.webp" alt="" style="
-    height: 64px;
-"></button>
-
-<div class="links"><a href="#home">Home</a>
-<a href="#pkging">Packaging</a>
-<a href="https://github.com/MagmaWM/MagmaWM" target="_blank" rel="noreferrer">GitHub</a>
-<a href="https://magmawm.org/docs" target="_blank" rel="noreferrer">Documentation</a>
-<a target="_blank" rel="noreferrer" href="https://discord.gg/8bdstnRjby">Discord</a>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="icon" href="/assets/magma.webp">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/style/index.css">
+      <title>MagmaWM dev</title>
+   <body>
+      <!-- Menu Bar -->
+      <div class="header-container">
+         <div class="header">
+            <div class="logo-container">
+               <img src="assets/magma.webp" alt="">
+               <span class="logo-text">Magma │ WM</span>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="#pkg">Packaging</a></li>
+                  <li><a href="https://magmawm.org/docs/">Documentation</a></li>
+                  <li><a id="github" href="https://github.com/magmawm/magmawm" target="_blank">Github</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+<div class="container">
+      <!-- Main Content -->
+      <div class="content">
+         <div class="text">
+            <h1>
+               Magma Window Manager
+            </h1>
+            <hr>
+            <p>
+                MagmaWM is a versatile and customizable Wayland Compositor,
+                currently in development and actively
+                seeking contributions from the community.
+                Built with the Smithay library and programmed in Rust,
+                MagmaWM along with it's RON config provides users with flexibility
+                and customization options. MagmaWM is licensed under GPLv3,
+                ensuring that it remains open-source and free for all
+                to use and contribute to.
+               <hr>
+            </p>
+            <a id="docs" href="https://magmawm.org/docs/">Documentaion</a>
+            <a id="discord" href="https://discord.com/invite/8bdstnRjby" target="_blank">Discord</a>
+         </div>
+        <img class="image-container" src="/assets/images/preview.webp" alt="some preview">
+      </div>
+   <!-- Carousel -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block w-100" src="/assets/images/prev1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="/assets/images/prev2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="/assets/images/prev3.webp" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="/assets/images/prev4.webp" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="/assets/images/prev5.webp" alt="Fifth slide" width=200px>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </div>
 </div>
 
 
-
+<div class="packaging" id="pkg">
+   <h1>Packaging:</h1>
+   <h3>Coming soon. For now see below...</h3>
+   <a class="docsbottom" href="https://magmawm.org/docs/">Documentaion</a>
 </div>
-</div></div></div>
-<div id="home" class="nav-spacing"></div>
-<div class="container"><div class="primary"><div class="left-section">
-<h1>Magma Window Manager</h1>
-<p>MagmaWM is a versatile and customizable Window Manager / Wayland Compositor, currently in development and actively seeking contributions from the community. Built with the Smithay library and programmed in Rust, MagmaWM along with it's RON config provides users with flexibility and customization options. MagmaWM is licensed under GPLv3, ensuring that it remains open-source and free for all to use and contribute to.</p>
-<div class="buttons">
-  <a class="primary-btn" href="#pkging"><i class="fa-solid fa-box center"></i>Packaging</a>
-  <a class="secondary-btn" target="_blank" rel="noreferrer" href="https://magmawm.org/docs"><i class="fa-regular fa-file center"></i>Documentation</a>
-  <a class="primary-btn-gh" target="_blank" rel="noreferrer" href="https://github.com/MagmaWM/MagmaWM"><i class="fa-brands fa-github center"></i>GitHub</a>
-  <a class="primary-btn-dc" target="_blank" rel="noreferrer" href="https://discord.gg/8bdstnRjby"><i class="fa-brands fa-discord center"></i>Discord</a>
-</div></div>
-<div class="right-section"><button class="primary-img"><div class="preview-image"></div></button></div></div>
-<div class="slider">
-<div id="demo" class="carousel slide pointer-event" data-bs-ride="carousel">
-
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class=""></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class=""></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active" aria-current="true"></button>
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="./assets/scr1.webp" alt="sc1" class="d-block w-100">
-    </div>
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="./assets/scr2.webp" alt="sc2" class="d-block w-100">
-    </div>
-    <div class="carousel-item data-bs-interval= active" 3000"="">
-      <img src="./assets/scr3.webp" alt="sc3" class="d-block w-100">
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-</div>
-<div id="pkging" class="pkgstat"><h2>
-  <span class="highlight">Packaging</span>
-</h2>
-<p>Coming Soon...</p>
-<!--PACKAGING SECTION-->
-<!-- <div class="row align-items-center">
-		<div class="col-sm"><p id="arch"><img id="arico" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/archlinux-512.png" style="
-"><img>Arch Linux</p></div>
-		<div class="col-sm"><p id="pacman"><img id="filler" src="./assets/filler.webp"><img>pacman -S magmaewm</p></div>
-	</div>
-	<div class="row align-items-center">
-		<div class="col-sm"><p id="fedora"><img id="fedico" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/fedora-256.png"><img>Fedora</p></div>
-                <div class="col-sm"><p id="dnf"><img id="filler" src="./assets/filler.png" style="
-"><img style="
-">dnf install magmaewm</p></div>
-	</div>
-	<div class="row">
-		<div class="col-sm"><p id="debian"><img id="debico" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/debian-256.png"><img>Debian</p></div>
-                <div class="col-sm"><p id="apt"><img id="filler" src="./assets/filler.webp"><img>apt install magmaewm</p></div>
-	</div>
-	<div class="row">
-                <div class="col-sm"><p id="opensuse"><img id="opico" src="https://cdn0.iconfinder.com/data/icons/flat-round-system/512/opensuse-256.png"><img>OpenSuse</p></div>
-		<div class="col-sm"><p id="zypper"><img id="filler" src="./assets/filler.webp"><img>zypper in magmaewm</p></div>
-	</div> -->
-<div class="blankend">
-</div></div></div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+   </body>
+   </head>
+</html>

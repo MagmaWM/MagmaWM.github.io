@@ -1,0 +1,330 @@
+@font-face {
+  font-family: Argon;
+  src: url(/assets/Argon.otf);
+}
+:root {
+  /* Variables */
+    --background-color: #181818;
+    --menu-color: #161616;
+    --text-color:  #f3faff;
+
+    /* logo accent */
+    --logo-light: #e6930d;
+    --logo-dark: #fc670f;
+	  --code-color: #969896;
+    --mono-color: #1d1f21;
+  /* root */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'DM Sans',sans-serif;
+}
+body {
+	background: var(--background-color);
+}
+/* Menu bar */
+.header-container {
+  background-color: var(--menu-color);
+  padding-bottom: 10px;
+  position: relative; /* Add relative positioning */
+
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust the height as needed */
+  background: linear-gradient(90deg, var(--logo-dark), var(--logo-light));
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+
+}
+
+.header {
+	flex: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0 10%;
+}
+
+.header > nav {
+	margin-top: 20px;
+	flex-grow: 1;
+	height: 50px;
+	display: flex;
+	justify-content: end;
+}
+
+.header ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+}
+
+.header li {
+	margin: 0 0px;
+	padding: 0 10px;
+}
+#github {
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--logo-dark), var(--logo-light));
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--logo-dark);
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#github:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border-color: var(--logo-light);
+	color: var(--logo-light);
+	background-color: var(--background-color);
+}
+
+.logo-container {
+	padding: 10px;
+}
+
+.logo-container img {
+	margin-top: 10px;
+	height: 50px;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.logo-container .logo-text {
+  background: linear-gradient(90deg, var(--logo-dark), var(--logo-light));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Argon', 'sans-serif';
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 2.0rem; /* adjust as needed */
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.header a {
+	font-size: 1.5rem;
+  font-family: 'DM Sans' ,sans-serif;
+	display: block;
+	color: var(--text-color);
+	text-decoration: none;
+	padding: 0 10px;
+	line-height: 50px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+.header a:hover {
+	text-decoration: underline 2px var(--logo-light);
+	color: var(--logo-light);
+
+}
+
+/* CONTENT */
+
+
+.content {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+@keyframes fadein {
+		0% {
+				opacity: 0.0;
+		}
+		100% {
+				opacity: 1;
+		}
+}
+
+.text {
+  color: var(--text-color);
+  flex: 1;
+	flex-direction: column;
+	animation-name: fadein;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	animation-timing-function: cubic-bezier(.22,.61,.36,1);
+	animation-fill-mode: forwards;
+	opacity: 0;	
+}
+
+.image-container {
+  margin-left: 40px;
+  flex-shrink: 0;
+  width: 55%;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.image-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.content a {
+	padding-top: 20px;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: var(--text-color);
+}
+#docs, #discord {
+  display: inline-block;
+  width: 200px; /* Adjust the width as per your requirements */
+}
+
+#docs {
+	background-color: var(--logo-dark);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+#discord {
+	background: var(--logo-light);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+a#docs,
+a#discord {
+  flex-grow: 1;
+  text-align: center;
+}
+
+hr {
+	color: red;
+}
+#docs {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#docs:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-light);
+	color: var(--logo-light);
+	background-color: var(--background-color);
+}
+#discord {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	border: 1px solid transparent;
+}
+
+#discord:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-dark);
+	color: var(--logo-dark);
+	background-color: var(--background-color);
+}
+
+.content img {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	border: 1px solid transparent;
+
+}
+
+.content img:hover {
+  background: transparent;
+	transform: scale(1.03);
+	border: 1px solid black;
+	color: var(--logo-dark);
+	background-color: var(--background-color);
+}
+
+/* Carousel */
+.carousel {
+  margin-top: 60px;
+  width: 80%; 
+  display: block;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+	margin-left: auto;
+  margin-right: auto;
+}
+.carousel img {
+	border-radius: 5px;
+}
+.carousel-inner {
+	width: 100%;
+}
+.carousel-control-prev {
+	margin: -90px;
+}
+.carousel-control-next {
+	margin: -90px;
+}
+
+/* Packaging */
+.packaging {
+	margin-top: 100px;
+}
+
+.packaging h1,
+.packaging h3 {
+	color: var(--text-color);
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+}
+.docsbottom {
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.docsbottom {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.docsbottom:hover {
+  background: transparent;
+	transform: scale(1.1);
+	border: 1px solid;
+	border-color: var(--logo-light);
+	color: var(--logo-light);
+	background-color: var(--background-color);
+}
+.docsbottom {
+  flex-grow: 1;
+  text-align: center;
+}
+.docsbottom {
+  width: 160px;
+}
+
+.docsbottom {
+	background-color: var(--logo-dark);
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.docsbottom {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+	padding-left: 20px;
+	padding-right: 20px;	
+	text-align: center;
+	border-radius: 10px;
+	text-decoration: none;
+	color: var(--text-color);
+}
