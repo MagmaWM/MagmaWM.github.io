@@ -327,6 +327,9 @@ hr {
 
 /* mobile */
 @media (max-width: 720px) {
+    body {
+			overflow-x: hidden;
+		}
     .header {
         display:none;
     }
@@ -341,6 +344,14 @@ hr {
         display: inline-block;
     }
 		#magma-mobile {
+		  display: none;
 			padding: 10px;
 		}
+		.carousel-control-prev {
+			margin: -20px;
+		}
+		.carousel-control-next {
+			margin: -20px;
+		}
+
 }
