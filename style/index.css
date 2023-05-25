@@ -217,7 +217,6 @@ a#github-1 {
 }
 
 #github-1 {
-  display: none;
 	color: black;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -338,10 +337,10 @@ hr {
 			padding: 10px;
 		}
 		.carousel-control-prev {
-			margin: -20px;
+			margin: -50px;
 		}
 		.carousel-control-next {
-			margin: -20px;
+			margin: -50px;
 		}
 
 }
