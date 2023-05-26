@@ -11,10 +11,10 @@
   $(document).ready(function() {
     $("#discord").hover(
       function() {
-        $("#discord-icon").addClass("fa-shake");
+        $("#discord-icon").addClass("fa-beat");
       },
       function() {
-        $("#discord-icon").removeClass("fa-shake");
+        $("#discord-icon").removeClass("fa-beat");
       }
     );
   });
