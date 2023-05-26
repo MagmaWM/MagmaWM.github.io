@@ -53,9 +53,9 @@
     function handleScreenResize() {
       var discordIcon = $("#document-icon");
       if ($(window).width() <= 720) {
-        discordIcon.addClass("fa-bounce");
+        discordIcon.addClass("");
       } else {
-        discordIcon.removeClass("fa-bounce");
+        discordIcon.removeClass("");
       }
     }
 
