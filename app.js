@@ -49,3 +49,22 @@
     );
   });
 
+  $(document).ready(function() {
+    function handleScreenResize() {
+      var discordIcon = $("#document-icon");
+      if ($(window).width() <= 720) {
+        discordIcon.addClass("fa-bounce");
+      } else {
+        discordIcon.removeClass("fa-bounce");
+      }
+    }
+
+    // Call the function on page load
+    handleScreenResize();
+
+    // Call the function when the window is resized
+    $(window).resize(handleScreenResize);
+  });
+ window.addEventListener("DOMContentLoaded", function() {
+      document.body.style.opacity = "1";
+    });

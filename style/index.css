@@ -21,6 +21,8 @@
 body {
  background: linear-gradient(45deg, var(--background-color), var(--menu-color));
  background-size: 1000%;
+ opacity: 0;
+ transition: opacity 1s ease-in-out;
 }
 /* Menu bar */
 .header-container {
@@ -74,6 +76,9 @@ body {
 .header li {
 	margin: 0 0px;
 	padding: 0 10px;
+}
+#logo-header {
+  transition: transform 1s;
 }
 
 
