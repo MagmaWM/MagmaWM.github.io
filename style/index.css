@@ -75,24 +75,7 @@ body {
 	margin: 0 0px;
 	padding: 0 10px;
 }
-#logo-header {
-  transition: transform 1s;
-}
 
-#logo-header:hover {
-  animation: rotate-infinite 5s infinite;
-}
-
-@keyframes rotate-infinite {
-  0% {
-    transform: rotate(0deg);
-		scale: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-		scale: 1.3;
-  }
-}
 
 #github {
   padding: -100px;
