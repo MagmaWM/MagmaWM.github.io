@@ -47,6 +47,8 @@ body {
   height: 2px; /* Adjust the height as needed */
   background: linear-gradient(90deg, var(--logo-dark), var(--logo-light));
   box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+	box-shadow: 0 0 2px orange;
+
 
 }
 
@@ -351,4 +353,26 @@ hr {
 			margin: -50px;
 		}
 
+}
+
+
+
+/* Generic classes */
+
+.glow-orange {
+  box-shadow: 0 0 5px orange;
+	transition: box-shadow 0.3s ease-in-out;
+}
+.glow-orange-text {
+  color: orange;
+  text-shadow: 0 0 5px orange;
+	transition: text-shadow 0.3s ease-in-out;
+}
+
+.glow-blue {
+  text-shadow: 0 0 5px blue;
+}
+
+.glow-white {
+  text-shadow: 0 0 5px white;
 }
